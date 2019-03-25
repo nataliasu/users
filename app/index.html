@@ -3,16 +3,42 @@
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Company List</h1>
-        <buton type="button" class="btn btn-light" id="show">Click to show users</buton>
-        <div id='table'>
-        </div>
+        <div id=""toolbar">
+    <button id="button" class="btn btn-secondary">Show users</button>
+    <button id="button2" class="btn btn-secondary">Hide users</button>
+    </div>
+        <table
+                id="table"
+                data-toggle="table"
+                data-toolbar="#toolbar"
+                data-show-columns="true"
+                data-height="460"
+                data-show-pagination-switch="true"
+                data-pagination="true"
+                data-id-field="id"
+                data-page-list="[10, 25, 50, 100, ALL]">
+            <thead class="thead-dark">
+            <tr>
+                <th data-field="index">Index</th>
+                <th data-field="name">Company Name</th>
+                <th data-field="uri">URI</th>
+                <th data-field="usersAmount">Users</th>
+                <th data-field="users">User's Email</th>
+            </tr>
+            </thead>
+        </table>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
     <script src="index.js"></script>
 </body>
 
