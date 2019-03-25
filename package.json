@@ -29,12 +29,8 @@
     "dependencies": {
         "autoprefixer": "^9.5.0",
         "bootstrap": "^4.3.1",
-        "bootstrap-css-only": "^4.0.0",
-        "bootstrap-table": "^1.14.2",
-        "dev-server": "0.0.2",
         "jquery": "^3.3.1",
         "json-server": "^0.14.2",
-        "popper.js": "^1.14.7",
         "precss": "^3.1.2"
     }
 }
